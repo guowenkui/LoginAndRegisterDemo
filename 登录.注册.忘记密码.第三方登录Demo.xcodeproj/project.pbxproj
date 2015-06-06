@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C753BE631B22854700D38245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C753BE621B22854700D38245 /* main.m */; };
+		C753BE661B22854700D38245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C753BE651B22854700D38245 /* AppDelegate.m */; };
+		C753BE691B22854700D38245 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C753BE681B22854700D38245 /* ViewController.m */; };
+		C753BE6C1B22854700D38245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C753BE6A1B22854700D38245 /* Main.storyboard */; };
+		C753BE6E1B22854700D38245 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C753BE6D1B22854700D38245 /* Images.xcassets */; };
+		C753BE711B22854700D38245 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C753BE6F1B22854700D38245 /* LaunchScreen.xib */; };
+		C753BE7D1B22854700D38245 /* ________________DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C753BE7C1B22854700D38245 /* ________________DemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C753BE771B22854700D38245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C753BE551B22854700D38245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C753BE5C1B22854700D38245;
+			remoteInfo = "登录.注册.忘记密码.第三方登录Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C753BE5D1B22854700D38245 /* 登录.注册.忘记密码.第三方登录Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "登录.注册.忘记密码.第三方登录Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C753BE611B22854700D38245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C753BE621B22854700D38245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C753BE641B22854700D38245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C753BE651B22854700D38245 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C753BE671B22854700D38245 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C753BE681B22854700D38245 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C753BE6B1B22854700D38245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C753BE6D1B22854700D38245 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C753BE701B22854700D38245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C753BE761B22854700D38245 /* 登录.注册.忘记密码.第三方登录DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "登录.注册.忘记密码.第三方登录DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C753BE7B1B22854700D38245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C753BE7C1B22854700D38245 /* ________________DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "________________DemoTests.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C753BE5A1B22854700D38245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C753BE731B22854700D38245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C753BE541B22854700D38245 = {
+			isa = PBXGroup;
+			children = (
+				C753BE5F1B22854700D38245 /* 登录.注册.忘记密码.第三方登录Demo */,
+				C753BE791B22854700D38245 /* 登录.注册.忘记密码.第三方登录DemoTests */,
+				C753BE5E1B22854700D38245 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C753BE5E1B22854700D38245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C753BE5D1B22854700D38245 /* 登录.注册.忘记密码.第三方登录Demo.app */,
+				C753BE761B22854700D38245 /* 登录.注册.忘记密码.第三方登录DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C753BE5F1B22854700D38245 /* 登录.注册.忘记密码.第三方登录Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C753BE641B22854700D38245 /* AppDelegate.h */,
+				C753BE651B22854700D38245 /* AppDelegate.m */,
+				C753BE671B22854700D38245 /* ViewController.h */,
+				C753BE681B22854700D38245 /* ViewController.m */,
+				C753BE6A1B22854700D38245 /* Main.storyboard */,
+				C753BE6D1B22854700D38245 /* Images.xcassets */,
+				C753BE6F1B22854700D38245 /* LaunchScreen.xib */,
+				C753BE601B22854700D38245 /* Supporting Files */,
+			);
+			path = "登录.注册.忘记密码.第三方登录Demo";
+			sourceTree = "<group>";
+		};
+		C753BE601B22854700D38245 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C753BE611B22854700D38245 /* Info.plist */,
+				C753BE621B22854700D38245 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C753BE791B22854700D38245 /* 登录.注册.忘记密码.第三方登录DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C753BE7C1B22854700D38245 /* ________________DemoTests.m */,
+				C753BE7A1B22854700D38245 /* Supporting Files */,
+			);
+			path = "登录.注册.忘记密码.第三方登录DemoTests";
+			sourceTree = "<group>";
+		};
+		C753BE7A1B22854700D38245 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C753BE7B1B22854700D38245 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C753BE5C1B22854700D38245 /* 登录.注册.忘记密码.第三方登录Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C753BE801B22854700D38245 /* Build configuration list for PBXNativeTarget "登录.注册.忘记密码.第三方登录Demo" */;
+			buildPhases = (
+				C753BE591B22854700D38245 /* Sources */,
+				C753BE5A1B22854700D38245 /* Frameworks */,
+				C753BE5B1B22854700D38245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "登录.注册.忘记密码.第三方登录Demo";
+			productName = "登录.注册.忘记密码.第三方登录Demo";
+			productReference = C753BE5D1B22854700D38245 /* 登录.注册.忘记密码.第三方登录Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C753BE751B22854700D38245 /* 登录.注册.忘记密码.第三方登录DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C753BE831B22854700D38245 /* Build configuration list for PBXNativeTarget "登录.注册.忘记密码.第三方登录DemoTests" */;
+			buildPhases = (
+				C753BE721B22854700D38245 /* Sources */,
+				C753BE731B22854700D38245 /* Frameworks */,
+				C753BE741B22854700D38245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C753BE781B22854700D38245 /* PBXTargetDependency */,
+			);
+			name = "登录.注册.忘记密码.第三方登录DemoTests";
+			productName = "登录.注册.忘记密码.第三方登录DemoTests";
+			productReference = C753BE761B22854700D38245 /* 登录.注册.忘记密码.第三方登录DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C753BE551B22854700D38245 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "郭文魁";
+				TargetAttributes = {
+					C753BE5C1B22854700D38245 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					C753BE751B22854700D38245 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = C753BE5C1B22854700D38245;
+					};
+				};
+			};
+			buildConfigurationList = C753BE581B22854700D38245 /* Build configuration list for PBXProject "登录.注册.忘记密码.第三方登录Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C753BE541B22854700D38245;
+			productRefGroup = C753BE5E1B22854700D38245 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C753BE5C1B22854700D38245 /* 登录.注册.忘记密码.第三方登录Demo */,
+				C753BE751B22854700D38245 /* 登录.注册.忘记密码.第三方登录DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C753BE5B1B22854700D38245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C753BE6C1B22854700D38245 /* Main.storyboard in Resources */,
+				C753BE711B22854700D38245 /* LaunchScreen.xib in Resources */,
+				C753BE6E1B22854700D38245 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C753BE741B22854700D38245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C753BE591B22854700D38245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C753BE691B22854700D38245 /* ViewController.m in Sources */,
+				C753BE661B22854700D38245 /* AppDelegate.m in Sources */,
+				C753BE631B22854700D38245 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C753BE721B22854700D38245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C753BE7D1B22854700D38245 /* ________________DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C753BE781B22854700D38245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C753BE5C1B22854700D38245 /* 登录.注册.忘记密码.第三方登录Demo */;
+			targetProxy = C753BE771B22854700D38245 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C753BE6A1B22854700D38245 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C753BE6B1B22854700D38245 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C753BE6F1B22854700D38245 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C753BE701B22854700D38245 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C753BE7E1B22854700D38245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C753BE7F1B22854700D38245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C753BE811B22854700D38245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "登录.注册.忘记密码.第三方登录Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C753BE821B22854700D38245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "登录.注册.忘记密码.第三方登录Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C753BE841B22854700D38245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "登录.注册.忘记密码.第三方登录DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/登录.注册.忘记密码.第三方登录Demo.app/登录.注册.忘记密码.第三方登录Demo";
+			};
+			name = Debug;
+		};
+		C753BE851B22854700D38245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "登录.注册.忘记密码.第三方登录DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/登录.注册.忘记密码.第三方登录Demo.app/登录.注册.忘记密码.第三方登录Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C753BE581B22854700D38245 /* Build configuration list for PBXProject "登录.注册.忘记密码.第三方登录Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C753BE7E1B22854700D38245 /* Debug */,
+				C753BE7F1B22854700D38245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C753BE801B22854700D38245 /* Build configuration list for PBXNativeTarget "登录.注册.忘记密码.第三方登录Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C753BE811B22854700D38245 /* Debug */,
+				C753BE821B22854700D38245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C753BE831B22854700D38245 /* Build configuration list for PBXNativeTarget "登录.注册.忘记密码.第三方登录DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C753BE841B22854700D38245 /* Debug */,
+				C753BE851B22854700D38245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C753BE551B22854700D38245 /* Project object */;
+}
