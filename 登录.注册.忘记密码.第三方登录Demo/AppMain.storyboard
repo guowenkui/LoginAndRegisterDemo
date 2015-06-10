@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="b2d-HM-855">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--App Main View Controller-->
+        <!--First View Controller-->
         <scene sceneID="VNr-Xc-OSu">
             <objects>
-                <viewController storyboardIdentifier="AppMainViewController" id="NEo-3z-Z4j" customClass="AppMainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="NEo-3z-Z4j" customClass="FirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wWc-24-fDV"/>
                         <viewControllerLayoutGuide type="bottom" id="L7y-pD-HOf"/>
@@ -20,7 +20,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="app主界面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yu-uL-c2i">
                                 <rect key="frame" x="120" y="259" width="92" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -31,7 +31,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="54B-Ii-Gww">
                                 <rect key="frame" x="-23" y="-15" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="设置">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="-12" y="-416"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="ydX-Wa-fjJ">
             <objects>
-                <viewController id="Bdu-ES-iSx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="Bdu-ES-iSx" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aSA-cm-9Y6"/>
                         <viewControllerLayoutGuide type="bottom" id="SON-LU-deq"/>
@@ -62,6 +62,9 @@
                                 <state key="normal" title="注册/登录">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginAndRegist:" destination="Bdu-ES-iSx" eventType="touchUpInside" id="WWE-U8-RYZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="-12" y="237"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="sfu-pO-a0T">
             <objects>
-                <viewController id="kbb-td-362" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThirdViewController" id="kbb-td-362" customClass="ThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IMr-su-ui1"/>
                         <viewControllerLayoutGuide type="bottom" id="tNo-PG-55U"/>
@@ -98,12 +101,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VI9-hO-EGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12" y="914"/>
+            <point key="canvasLocation" x="-12" y="1000"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar View Controller-->
         <scene sceneID="x8w-kH-E6S">
             <objects>
-                <tabBarController id="b2d-HM-855" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarViewController" id="b2d-HM-855" customClass="MainTabBarViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="dDO-Qr-bGa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -112,13 +115,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="cZC-Hw-bvg" kind="relationship" relationship="viewControllers" id="iQn-vv-d57"/>
-                        <segue destination="2I6-zv-EC7" kind="relationship" relationship="viewControllers" id="Vyr-ps-wEs"/>
                         <segue destination="PPS-xI-IdP" kind="relationship" relationship="viewControllers" id="cnT-F2-n2P"/>
+                        <segue destination="2I6-zv-EC7" kind="relationship" relationship="viewControllers" id="Vyr-ps-wEs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xz5-OF-Xdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1098" y="146"/>
+            <point key="canvasLocation" x="-1374" y="438"/>
         </scene>
         <!--main-->
         <scene sceneID="iW6-T4-IoE">

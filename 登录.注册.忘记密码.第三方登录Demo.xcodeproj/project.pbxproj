@@ -38,7 +38,6 @@
 		C75961571B24A72A0051C2A7 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C75961561B24A72A0051C2A7 /* libstdc++.dylib */; };
 		C75961591B24A7350051C2A7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C75961581B24A7350051C2A7 /* libz.dylib */; };
 		C75A81E81B2735F800C14870 /* AppMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75A81E71B2735F800C14870 /* AppMain.storyboard */; };
-		C75A81EC1B27363100C14870 /* AppMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75A81EB1B27363100C14870 /* AppMainViewController.m */; };
 		C75A81EE1B27370A00C14870 /* ic_large_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = C75A81ED1B27370A00C14870 /* ic_large_button_pressed.png */; };
 		C772B5FC1B24804000CA576B /* 68-sina-weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = C772B5FB1B24804000CA576B /* 68-sina-weibo.png */; };
 		C772B5FE1B2480C700CA576B /* qq-8.png in Resources */ = {isa = PBXBuildFile; fileRef = C772B5FD1B2480C700CA576B /* qq-8.png */; };
@@ -77,6 +76,10 @@
 		C772B6C01B249A2A00CA576B /* libSocialWhatsapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C772B6A51B249A2A00CA576B /* libSocialWhatsapp.a */; };
 		C772B6C11B249A2A00CA576B /* libSocialYiXin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C772B6A81B249A2A00CA576B /* libSocialYiXin.a */; };
 		C772B6C21B249A2A00CA576B /* libYixinSDK_V2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C772B6A91B249A2A00CA576B /* libYixinSDK_V2.2.a */; };
+		C788BD141B2870A20027876C /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD131B2870A20027876C /* MainTabBarViewController.m */; };
+		C788BD171B2870C10027876C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD161B2870C10027876C /* FirstViewController.m */; };
+		C788BD1A1B2870D10027876C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD191B2870D10027876C /* SecondViewController.m */; };
+		C788BD1D1B2870E60027876C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD1C1B2870E60027876C /* ThirdViewController.m */; };
 		C7EB9EB31B2325610043CC10 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E8D1B2325610043CC10 /* AFHTTPRequestOperation.m */; };
 		C7EB9EB41B2325610043CC10 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E8F1B2325610043CC10 /* AFHTTPRequestOperationManager.m */; };
 		C7EB9EB51B2325610043CC10 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E911B2325610043CC10 /* AFHTTPSessionManager.m */; };
@@ -162,8 +165,6 @@
 		C75961561B24A72A0051C2A7 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		C75961581B24A7350051C2A7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C75A81E71B2735F800C14870 /* AppMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppMain.storyboard; sourceTree = "<group>"; };
-		C75A81EA1B27363100C14870 /* AppMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMainViewController.h; sourceTree = "<group>"; };
-		C75A81EB1B27363100C14870 /* AppMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMainViewController.m; sourceTree = "<group>"; };
 		C75A81ED1B27370A00C14870 /* ic_large_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_large_button_pressed.png; sourceTree = "<group>"; };
 		C772B5FB1B24804000CA576B /* 68-sina-weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "68-sina-weibo.png"; sourceTree = "<group>"; };
 		C772B5FD1B2480C700CA576B /* qq-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq-8.png"; sourceTree = "<group>"; };
@@ -241,6 +242,14 @@
 		C772B6AA1B249A2A00CA576B /* UMSocialYiXinHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialYiXinHandler.h; sourceTree = "<group>"; };
 		C772B6AB1B249A2A00CA576B /* YXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXApi.h; sourceTree = "<group>"; };
 		C772B6AC1B249A2A00CA576B /* YXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXApiObject.h; sourceTree = "<group>"; };
+		C788BD121B2870A20027876C /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
+		C788BD131B2870A20027876C /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		C788BD151B2870C10027876C /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		C788BD161B2870C10027876C /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		C788BD181B2870D10027876C /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C788BD191B2870D10027876C /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		C788BD1B1B2870E60027876C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		C788BD1C1B2870E60027876C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		C7EB9E8C1B2325610043CC10 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		C7EB9E8D1B2325610043CC10 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		C7EB9E8E1B2325610043CC10 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -453,8 +462,14 @@
 			isa = PBXGroup;
 			children = (
 				C75A81E71B2735F800C14870 /* AppMain.storyboard */,
-				C75A81EA1B27363100C14870 /* AppMainViewController.h */,
-				C75A81EB1B27363100C14870 /* AppMainViewController.m */,
+				C788BD121B2870A20027876C /* MainTabBarViewController.h */,
+				C788BD131B2870A20027876C /* MainTabBarViewController.m */,
+				C788BD151B2870C10027876C /* FirstViewController.h */,
+				C788BD161B2870C10027876C /* FirstViewController.m */,
+				C788BD181B2870D10027876C /* SecondViewController.h */,
+				C788BD191B2870D10027876C /* SecondViewController.m */,
+				C788BD1B1B2870E60027876C /* ThirdViewController.h */,
+				C788BD1C1B2870E60027876C /* ThirdViewController.m */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";
@@ -862,10 +877,13 @@
 				C7EB9EB91B2325610043CC10 /* AFURLRequestSerialization.m in Sources */,
 				C7EB9EB81B2325610043CC10 /* AFURLConnectionOperation.m in Sources */,
 				C753BEAD1B2292F600D38245 /* IQKeyboardManager.m in Sources */,
+				C788BD1A1B2870D10027876C /* SecondViewController.m in Sources */,
 				C7EB9EC31B2325610043CC10 /* UIProgressView+AFNetworking.m in Sources */,
 				C753BEB51B2292F600D38245 /* UIWindow+Hierarchy.m in Sources */,
 				C7EB9EC41B2325610043CC10 /* UIRefreshControl+AFNetworking.m in Sources */,
+				C788BD141B2870A20027876C /* MainTabBarViewController.m in Sources */,
 				C7EB9EBB1B2325610043CC10 /* AFURLSessionManager.m in Sources */,
+				C788BD1D1B2870E60027876C /* ThirdViewController.m in Sources */,
 				C753BEB81B2293D500D38245 /* ForgetPasswordViewController.m in Sources */,
 				C753BEB41B2292F600D38245 /* UIView+IQKeyboardToolbar.m in Sources */,
 				C7EB9EB71B2325610043CC10 /* AFSecurityPolicy.m in Sources */,
@@ -876,6 +894,7 @@
 				C753BE941B2287AC00D38245 /* RegisterViewController.m in Sources */,
 				C7EB9EC01B2325610043CC10 /* UIAlertView+AFNetworking.m in Sources */,
 				C753BE911B22879900D38245 /* LoginViewController.m in Sources */,
+				C788BD171B2870C10027876C /* FirstViewController.m in Sources */,
 				C753BEB31B2292F600D38245 /* UIView+Hierarchy.m in Sources */,
 				C753BEB21B2292F600D38245 /* NSArray+Sort.m in Sources */,
 				C7EB9EB51B2325610043CC10 /* AFHTTPSessionManager.m in Sources */,
@@ -890,7 +909,6 @@
 				C7EB9EB61B2325610043CC10 /* AFNetworkReachabilityManager.m in Sources */,
 				C7EB9EC51B2325610043CC10 /* UIWebView+AFNetworking.m in Sources */,
 				C7EB9EBA1B2325610043CC10 /* AFURLResponseSerialization.m in Sources */,
-				C75A81EC1B27363100C14870 /* AppMainViewController.m in Sources */,
 				C7EB9EBF1B2325610043CC10 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				C753BE631B22854700D38245 /* main.m in Sources */,
 			);

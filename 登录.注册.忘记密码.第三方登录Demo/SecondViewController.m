@@ -1,23 +1,32 @@
 //
-//  AppMainViewController.m
+//  SecondViewController.m
 //  登录.注册.忘记密码.第三方登录Demo
 //
-//  Created by 郭文魁 on 15/6/9.
+//  Created by 郭文魁 on 15/6/10.
 //  Copyright (c) 2015年 郭文魁. All rights reserved.
 //
 
-#import "AppMainViewController.h"
-
-@interface AppMainViewController ()
+#import "SecondViewController.h"
+#import "LoginViewController.h"
+@interface SecondViewController ()
 
 @end
 
-@implementation AppMainViewController
+@implementation SecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"变化");
+}
+- (IBAction)loginAndRegist:(id)sender {
+    UIStoryboard *str = [UIStoryboard storyboardWithName:@"LoginAndRegister" bundle:nil];
+    LoginViewController *login= [str instantiateInitialViewController];
+    
+    //[self.navigationController pushViewController:login animated:YES];
+    
+    [self presentViewController:login animated:YES completion:nil];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

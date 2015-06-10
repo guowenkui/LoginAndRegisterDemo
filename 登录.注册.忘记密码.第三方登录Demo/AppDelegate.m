@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "UMSocial.h"
 #import "UMSocialWechatHandler.h"
+
+#import "MainTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -24,10 +26,17 @@
     //微信
     [UMSocialWechatHandler setWXAppId:@"wx4a0959529ef970e3" appSecret:@"0c1b9f673fffc4adfe2519a8a7daabdc" url:@"http://www.baidu.com"];
     
-    UIStoryboard *str = [UIStoryboard storyboardWithName:@"LoginAndRegister" bundle:nil];
-    UINavigationController *nav = [str instantiateInitialViewController];
+//    UIStoryboard *str = [UIStoryboard storyboardWithName:@"LoginAndRegister" bundle:nil];
+//    UINavigationController *nav = [str instantiateInitialViewController];
+//    
+//    self.window.rootViewController = nav;
     
-    self.window.rootViewController = nav;
+    UIStoryboard *str =[UIStoryboard storyboardWithName:@"AppMain" bundle:nil];
+    
+    MainTabBarViewController *main = [str instantiateInitialViewController];
+    
+    self.window.rootViewController = main;
+    
     return YES;
 }
 
