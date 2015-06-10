@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UMSocial.h"
+#import "UMSocialWechatHandler.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [UMSocialData setAppKey:@"5574fce667e58e2e60001a66"];
+    
+    //微信
+    [UMSocialWechatHandler setWXAppId:@"wx4a0959529ef970e3" appSecret:@"0c1b9f673fffc4adfe2519a8a7daabdc" url:@"http://www.baidu.com"];
+    
+    UIStoryboard *str = [UIStoryboard storyboardWithName:@"LoginAndRegister" bundle:nil];
+    UINavigationController *nav = [str instantiateInitialViewController];
+    
+    self.window.rootViewController = nav;
     return YES;
 }
 
