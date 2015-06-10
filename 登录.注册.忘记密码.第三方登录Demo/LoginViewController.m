@@ -11,7 +11,7 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "UMSocialAccountManager.h"
 #import "UMSocialSnsPlatformManager.h"
-
+#import "MainTabBarViewController.h"
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textPhone;
 @property (weak, nonatomic) IBOutlet UITextField *textPassword;
@@ -62,11 +62,11 @@
     
     BOOL ret = [[SystemManager sharedInstance] loginAccount:self.account withPassword:self.password];
     if (ret ){
-//        UIStoryboard *str =[ UIStoryboard storyboardWithName:@"AppMain" bundle:nil];
-//        
-//        AppMainViewController *app = [str instantiateViewControllerWithIdentifier:@"AppMainViewController"];
-//        
-//        [self.navigationController pushViewController:app animated:YES];
+        UIStoryboard *str =[ UIStoryboard storyboardWithName:@"AppMain" bundle:nil];
+        
+        MainTabBarViewController *app = [str instantiateViewControllerWithIdentifier:@"MainTabBarViewController"];
+        
+        self.view.window.rootViewController = app;
     }
 
 

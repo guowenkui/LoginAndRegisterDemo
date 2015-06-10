@@ -80,6 +80,7 @@
 		C788BD171B2870C10027876C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD161B2870C10027876C /* FirstViewController.m */; };
 		C788BD1A1B2870D10027876C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD191B2870D10027876C /* SecondViewController.m */; };
 		C788BD1D1B2870E60027876C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD1C1B2870E60027876C /* ThirdViewController.m */; };
+		C788BD1F1B28840D0027876C /* 头像.png in Resources */ = {isa = PBXBuildFile; fileRef = C788BD1E1B28840D0027876C /* 头像.png */; };
 		C7EB9EB31B2325610043CC10 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E8D1B2325610043CC10 /* AFHTTPRequestOperation.m */; };
 		C7EB9EB41B2325610043CC10 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E8F1B2325610043CC10 /* AFHTTPRequestOperationManager.m */; };
 		C7EB9EB51B2325610043CC10 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E911B2325610043CC10 /* AFHTTPSessionManager.m */; };
@@ -250,6 +251,7 @@
 		C788BD191B2870D10027876C /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C788BD1B1B2870E60027876C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		C788BD1C1B2870E60027876C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		C788BD1E1B28840D0027876C /* 头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "头像.png"; sourceTree = "<group>"; };
 		C7EB9E8C1B2325610043CC10 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		C7EB9E8D1B2325610043CC10 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		C7EB9E8E1B2325610043CC10 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 		C753BE541B22854700D38245 = {
 			isa = PBXGroup;
 			children = (
+				C788BD1E1B28840D0027876C /* 头像.png */,
 				C75A81ED1B27370A00C14870 /* ic_large_button_pressed.png */,
 				C75961581B24A7350051C2A7 /* libz.dylib */,
 				C75961561B24A72A0051C2A7 /* libstdc++.dylib */,
@@ -831,6 +834,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C788BD1F1B28840D0027876C /* 头像.png in Resources */,
 				C75A81EE1B27370A00C14870 /* ic_large_button_pressed.png in Resources */,
 				C772B66A1B2499A400CA576B /* UMSnsAccountViewController.xib in Resources */,
 				C772B6671B2499A400CA576B /* UMShareEditViewController.xib in Resources */,
