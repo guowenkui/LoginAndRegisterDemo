@@ -67,6 +67,7 @@
         MainTabBarViewController *app = [str instantiateViewControllerWithIdentifier:@"MainTabBarViewController"];
         
         self.view.window.rootViewController = app;
+        NSLog(@"00000");
     }
 
 

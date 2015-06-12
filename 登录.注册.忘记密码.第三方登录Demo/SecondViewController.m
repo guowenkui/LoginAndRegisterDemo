@@ -8,7 +8,10 @@
 
 #import "SecondViewController.h"
 #import "LoginViewController.h"
+#import "SystemManager.h"
 @interface SecondViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *userNickName;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @end
 
@@ -17,6 +20,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if ([[SystemManager sharedInstance] curLoginState]== LoginStateOnline) {
+        
+        self.loginBtn.hidden=YES;
+        
+    }
+    else{
+        self.userNickName.hidden=YES;
+    }
+    
 }
 - (IBAction)loginAndRegist:(id)sender {
     UIStoryboard *str = [UIStoryboard storyboardWithName:@"LoginAndRegister" bundle:nil];

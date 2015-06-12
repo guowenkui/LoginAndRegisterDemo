@@ -20,6 +20,15 @@ typedef enum {
 +(SystemManager *) sharedInstance;
 
 
+//初始化系统状态
+-(void)systemStatusInit;
+
+
+
+//获取当前登录状态
+-(LoginState)curLoginState;
+
+
 /**
  *  用户名密码登录
  */

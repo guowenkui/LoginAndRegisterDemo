@@ -30,6 +30,24 @@
 }
 
 
+-(void)systemStatusInit
+{
+    BOOL hasLogin = [[NSUserDefaults standardUserDefaults] boolForKey:@"hasLogin"];
+    if (hasLogin) {
+        self.loginState = LoginStateOnline;
+    }
+    else{
+        self.loginState = LoginStateOffline;
+    }
+}
+
+//获取当前登录状态
+-(LoginState)curLoginState
+{
+    return self.loginState;
+}
+
+
 -(BOOL)loginAccount:(NSString *)account withPassword:(NSString *)password
 {
     [self requestForLoginWithAccount:account andPassword:password];
@@ -60,6 +78,11 @@
               if (((NSDictionary *)responseObject)[@"error"] ==nil) {
                   NSLog(@"登陆成功");
                   NSLog(@"responseObject==%@",responseObject);
+                  
+                  self.loginState = LoginStateOnline;
+                  
+                  //记住登录状态
+                  [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLogin"];
                   
               }
               else{

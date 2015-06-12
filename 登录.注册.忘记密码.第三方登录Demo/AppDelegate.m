@@ -11,6 +11,8 @@
 #import "UMSocialWechatHandler.h"
 
 #import "MainTabBarViewController.h"
+#import "SystemManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -52,10 +54,16 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    //初始化系统转态:applicationDidBecomeActive和applicationWillEnterForeground都要掉用
+    [[SystemManager sharedInstance] systemStatusInit];
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    //初始化系统转态:applicationDidBecomeActive和applicationWillEnterForeground都要掉用
+    [[SystemManager sharedInstance] systemStatusInit];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

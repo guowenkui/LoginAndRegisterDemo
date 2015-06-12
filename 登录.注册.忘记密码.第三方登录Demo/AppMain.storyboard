@@ -58,7 +58,7 @@
                                 <rect key="frame" x="44" y="129" width="56" height="56"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SC9-gZ-dbX">
-                                <rect key="frame" x="153" y="140" width="76" height="33"/>
+                                <rect key="frame" x="140" y="140" width="73" height="33"/>
                                 <state key="normal" title="注册/登录">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -66,10 +66,20 @@
                                     <action selector="loginAndRegist:" destination="Bdu-ES-iSx" eventType="touchUpInside" id="WWE-U8-RYZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用户昵称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qib-bs-gdm">
+                                <rect key="frame" x="145" y="146" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="b0t-eJ-fAB"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="SC9-gZ-dbX" id="lA1-XS-zZw"/>
+                        <outlet property="userNickName" destination="Qib-bs-gdm" id="8Sz-LB-HHM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Z7-XL-bNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
