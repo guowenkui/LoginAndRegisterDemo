@@ -81,6 +81,8 @@
 		C788BD1A1B2870D10027876C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD191B2870D10027876C /* SecondViewController.m */; };
 		C788BD1D1B2870E60027876C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD1C1B2870E60027876C /* ThirdViewController.m */; };
 		C788BD1F1B28840D0027876C /* 头像.png in Resources */ = {isa = PBXBuildFile; fileRef = C788BD1E1B28840D0027876C /* 头像.png */; };
+		C7CDD5331B2BCF7900018E2C /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CDD5321B2BCF7900018E2C /* KeychainItemWrapper.m */; };
+		C7CDD53F1B2BF40300018E2C /* KeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CDD53E1B2BF40300018E2C /* KeyChainManager.m */; };
 		C7EB9EB31B2325610043CC10 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E8D1B2325610043CC10 /* AFHTTPRequestOperation.m */; };
 		C7EB9EB41B2325610043CC10 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E8F1B2325610043CC10 /* AFHTTPRequestOperationManager.m */; };
 		C7EB9EB51B2325610043CC10 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E911B2325610043CC10 /* AFHTTPSessionManager.m */; };
@@ -252,6 +254,10 @@
 		C788BD1B1B2870E60027876C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		C788BD1C1B2870E60027876C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		C788BD1E1B28840D0027876C /* 头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "头像.png"; sourceTree = "<group>"; };
+		C7CDD5311B2BCF7900018E2C /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		C7CDD5321B2BCF7900018E2C /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		C7CDD53D1B2BF40300018E2C /* KeyChainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainManager.h; sourceTree = "<group>"; };
+		C7CDD53E1B2BF40300018E2C /* KeyChainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainManager.m; sourceTree = "<group>"; };
 		C7EB9E8C1B2325610043CC10 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		C7EB9E8D1B2325610043CC10 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		C7EB9E8E1B2325610043CC10 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -343,23 +349,18 @@
 			children = (
 				C788BD1E1B28840D0027876C /* 头像.png */,
 				C75A81ED1B27370A00C14870 /* ic_large_button_pressed.png */,
-				C75961581B24A7350051C2A7 /* libz.dylib */,
-				C75961561B24A72A0051C2A7 /* libstdc++.dylib */,
-				C75961541B24A71C0051C2A7 /* CoreTelephony.framework */,
-				C75961521B24A7030051C2A7 /* libsqlite3.dylib */,
-				C75961501B24A6F20051C2A7 /* CoreGraphics.framework */,
-				C759614E1B24A6E60051C2A7 /* libiconv.dylib */,
-				C759614C1B24A6C20051C2A7 /* Security.framework */,
-				C759614A1B24A6AE0051C2A7 /* SystemConfiguration.framework */,
 				C772B5FF1B24811A00CA576B /* 49-tencent-mm.png */,
 				C772B5FD1B2480C700CA576B /* qq-8.png */,
 				C772B5FB1B24804000CA576B /* 68-sina-weibo.png */,
+				C7CDD5311B2BCF7900018E2C /* KeychainItemWrapper.h */,
+				C7CDD5321B2BCF7900018E2C /* KeychainItemWrapper.m */,
 				C772B66D1B249A2A00CA576B /* UMSocial_Sdk_Extra_Frameworks */,
 				C772B6451B2499A400CA576B /* UMSocial_Sdk_4.2.3 */,
 				C7EB9E8A1B2325610043CC10 /* AFNetworking */,
 				C753BE951B2292F600D38245 /* IQKeyBoardManager */,
 				C753BE5F1B22854700D38245 /* 登录.注册.忘记密码.第三方登录Demo */,
 				C753BE791B22854700D38245 /* 登录.注册.忘记密码.第三方登录DemoTests */,
+				C77E8DCE1B2C274C00CBD686 /* Frameworks */,
 				C753BE5E1B22854700D38245 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -377,7 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				C753BE8C1B22871100D38245 /* 注册和登录 */,
-				C75A81E91B27360700C14870 /* New Group */,
+				C75A81E91B27360700C14870 /* 主界面 */,
 				C753BE641B22854700D38245 /* AppDelegate.h */,
 				C753BE651B22854700D38245 /* AppDelegate.m */,
 				C753BE671B22854700D38245 /* ViewController.h */,
@@ -428,6 +429,8 @@
 				C753BEB71B2293D500D38245 /* ForgetPasswordViewController.m */,
 				C753BEFE1B22AB7A00D38245 /* SystemManager.h */,
 				C753BEFF1B22AB7B00D38245 /* SystemManager.m */,
+				C7CDD53D1B2BF40300018E2C /* KeyChainManager.h */,
+				C7CDD53E1B2BF40300018E2C /* KeyChainManager.m */,
 			);
 			name = "注册和登录";
 			sourceTree = "<group>";
@@ -461,7 +464,7 @@
 			path = IQKeyBoardManager;
 			sourceTree = "<group>";
 		};
-		C75A81E91B27360700C14870 /* New Group */ = {
+		C75A81E91B27360700C14870 /* 主界面 */ = {
 			isa = PBXGroup;
 			children = (
 				C75A81E71B2735F800C14870 /* AppMain.storyboard */,
@@ -474,7 +477,7 @@
 				C788BD1B1B2870E60027876C /* ThirdViewController.h */,
 				C788BD1C1B2870E60027876C /* ThirdViewController.m */,
 			);
-			name = "New Group";
+			name = "主界面";
 			sourceTree = "<group>";
 		};
 		C772B6451B2499A400CA576B /* UMSocial_Sdk_4.2.3 */ = {
@@ -692,6 +695,22 @@
 			path = YiXin;
 			sourceTree = "<group>";
 		};
+		C77E8DCE1B2C274C00CBD686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C75961581B24A7350051C2A7 /* libz.dylib */,
+				C75961561B24A72A0051C2A7 /* libstdc++.dylib */,
+				C75961521B24A7030051C2A7 /* libsqlite3.dylib */,
+				C759614E1B24A6E60051C2A7 /* libiconv.dylib */,
+				C75961541B24A71C0051C2A7 /* CoreTelephony.framework */,
+				C75961501B24A6F20051C2A7 /* CoreGraphics.framework */,
+				C759614C1B24A6C20051C2A7 /* Security.framework */,
+				C759614A1B24A6AE0051C2A7 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			path = "登录.注册.忘记密码.第三方登录DemoTests";
+			sourceTree = "<group>";
+		};
 		C7EB9E8A1B2325610043CC10 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -896,6 +915,7 @@
 				C753BEAF1B2292F600D38245 /* IQTextView.m in Sources */,
 				C7EB9EBD1B2325610043CC10 /* README.md in Sources */,
 				C753BE941B2287AC00D38245 /* RegisterViewController.m in Sources */,
+				C7CDD53F1B2BF40300018E2C /* KeyChainManager.m in Sources */,
 				C7EB9EC01B2325610043CC10 /* UIAlertView+AFNetworking.m in Sources */,
 				C753BE911B22879900D38245 /* LoginViewController.m in Sources */,
 				C788BD171B2870C10027876C /* FirstViewController.m in Sources */,
@@ -904,6 +924,7 @@
 				C7EB9EB51B2325610043CC10 /* AFHTTPSessionManager.m in Sources */,
 				C753BEB01B2292F600D38245 /* IQTitleBarButtonItem.m in Sources */,
 				C753BF001B22AB7B00D38245 /* SystemManager.m in Sources */,
+				C7CDD5331B2BCF7900018E2C /* KeychainItemWrapper.m in Sources */,
 				C753BEB11B2292F600D38245 /* IQToolbar.m in Sources */,
 				C7EB9EB41B2325610043CC10 /* AFHTTPRequestOperationManager.m in Sources */,
 				C7EB9EC21B2325610043CC10 /* UIImageView+AFNetworking.m in Sources */,

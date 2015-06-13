@@ -12,14 +12,15 @@
 #import "UMSocialAccountManager.h"
 #import "UMSocialSnsPlatformManager.h"
 #import "MainTabBarViewController.h"
+#import "KeyChainManager.h"
+#import "MainTabBarViewController.h"
 @interface LoginViewController ()
+
+
+
 @property (weak, nonatomic) IBOutlet UITextField *textPhone;
 @property (weak, nonatomic) IBOutlet UITextField *textPassword;
 
-
-// 用户名密码
-@property (nonatomic,strong) NSString *account;
-@property (nonatomic,strong) NSString *password;
 
 
 @end
@@ -29,14 +30,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.textPhone.text = [[KeyChainManager sharedInstance] loadAccount];
+    NSLog(@"---%@",[[KeyChainManager sharedInstance] loadAccount]);
 }
 
--(void)textFieldDidEndEditing:(UITextField *)textField
-{
-    NSLog(@"llll");
-    self.account = self.textPhone.text ;
-    self.password =self.textPassword.text;
-}
+
 
 
 - (IBAction)LoginButtonPressed:(id)sender {
@@ -49,7 +47,7 @@
 {
     if (type == LoginTypeAccount) {
         //检查参数
-        if([self.account isEqualToString:@""]||[self.password isEqualToString:@""])
+        if([self.textPhone.text isEqualToString:@""]||[self.textPassword.text isEqualToString:@""])
         {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"错误" message:@"用户名和密码不能为空" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
             [alert show];
@@ -60,7 +58,11 @@
         
     };
     
-    BOOL ret = [[SystemManager sharedInstance] loginAccount:self.account withPassword:self.password];
+    
+    //记住用户名
+    [[KeyChainManager sharedInstance] saveAccount:self.textPhone.text];
+    
+    BOOL ret = [[SystemManager sharedInstance] loginAccount:self.textPhone.text withPassword:self.textPassword.text];
     if (ret ){
         UIStoryboard *str =[ UIStoryboard storyboardWithName:@"AppMain" bundle:nil];
         
@@ -146,8 +148,28 @@
 
 - (IBAction)cancel:(id)sender {
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if ([self isRootView]) {
+        UIStoryboard *str =[ UIStoryboard storyboardWithName:@"AppMain" bundle:nil];
+        MainTabBarViewController *main = [str instantiateInitialViewController];
+        
+        self.view.window.rootViewController = main;
+        
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
     
+    
+    
+}
+
+-(BOOL)isRootView
+{
+    if (self.navigationController == self.view.window.rootViewController) {
+        return YES;
+    }
+    else{
+        return NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

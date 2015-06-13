@@ -106,6 +106,19 @@
     
 }
 
+
+-(BOOL)logout
+{
+    if (self.loginState == LoginStateLogining || self.loginState == LoginStateOnline) {
+        self.loginState = LoginStateLogouting;
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"hasLogin"];
+    }
+    
+    //[[NSNotificationCenter defaultCenter] postNotificationName:@"logoutOk" object:nil userInfo:nil];
+    
+    return YES;
+}
+
 -(NSData *)loadAPNSDeviceToken
 {
     return [[NSUserDefaults standardUserDefaults] objectForKey:@"APNSDevToken"];

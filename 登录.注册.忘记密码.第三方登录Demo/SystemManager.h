@@ -35,4 +35,11 @@ typedef enum {
 
 -(BOOL)loginAccount:(NSString *)account withPassword:(NSString *)password;
 
+
+/**
+ *  注销
+ */
+
+-(BOOL)logout;
+
 @end

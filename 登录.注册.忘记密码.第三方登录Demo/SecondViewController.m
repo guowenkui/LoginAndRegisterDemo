@@ -21,21 +21,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSLog(@"Did");
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSLog(@"appear");
     if ([[SystemManager sharedInstance] curLoginState]== LoginStateOnline) {
         
         self.loginBtn.hidden=YES;
-        
+        self.userNickName.hidden = NO;
     }
     else{
         self.userNickName.hidden=YES;
+        self.loginBtn.hidden = NO;
     }
-    
+
 }
 - (IBAction)loginAndRegist:(id)sender {
+    
     UIStoryboard *str = [UIStoryboard storyboardWithName:@"LoginAndRegister" bundle:nil];
     LoginViewController *login= [str instantiateInitialViewController];
-    
-    //[self.navigationController pushViewController:login animated:YES];
     
     [self presentViewController:login animated:YES completion:nil];
     
