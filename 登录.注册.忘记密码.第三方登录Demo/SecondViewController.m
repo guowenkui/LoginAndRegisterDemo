@@ -9,6 +9,8 @@
 #import "SecondViewController.h"
 #import "LoginViewController.h"
 #import "SystemManager.h"
+#import "SqliteManager.h"
+#import "UserData.h"
 @interface SecondViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *userNickName;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
@@ -29,12 +31,16 @@
     NSLog(@"appear");
     if ([[SystemManager sharedInstance] curLoginState]== LoginStateOnline) {
         
+        UserData *data = [[SqliteManager shareManager] searchAllUsers];
+        
         self.loginBtn.hidden=YES;
         self.userNickName.hidden = NO;
+        self.userNickName.text = data.nicknime;
     }
     else{
-        self.userNickName.hidden=YES;
         self.loginBtn.hidden = NO;
+        self.userNickName.hidden=YES;
+        
     }
 
 }

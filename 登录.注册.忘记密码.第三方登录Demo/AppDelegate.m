@@ -12,7 +12,7 @@
 
 #import "MainTabBarViewController.h"
 #import "SystemManager.h"
-
+#import "SqliteManager.h"
 @interface AppDelegate ()
 
 @end
@@ -22,6 +22,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [SqliteManager shareManager] ;
+    
     
     [UMSocialData setAppKey:@"5574fce667e58e2e60001a66"];
     

@@ -8,6 +8,7 @@
 
 #import "SystemManager.h"
 #import "AFHTTPRequestOperationManager.h"
+#import "SqliteManager.h"
 @interface SystemManager()
 
 @property (nonatomic,assign) LoginState loginState;//登录状态
@@ -84,6 +85,8 @@
                   //记住登录状态
                   [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLogin"];
                   
+                  //获取用户信息
+                  [self requestForUserInfo];
               }
               else{
                   NSString *errorMessage = ((NSDictionary *)responseObject)[@"error"];
@@ -106,6 +109,54 @@
     
 }
 
+//登录成功后获取用户信息
+-(void)requestForUserInfo
+{
+    //模拟获取信息后放入数据库
+    UserData*data = [[UserData alloc] init];
+    
+    data.nicknime = @"郭文魁";
+    
+    [[SqliteManager shareManager] addUser:data];
+    
+    
+    
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    [manager GET:@"https://public.fdekyy.com.cn/api/app/Member/GetUserInfo"
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject){
+             
+             NSInteger messageType= [((NSDictionary *)responseObject)[@"MessageType"] integerValue];
+             if (messageType ==0) {
+                 NSLog(@"获取用户信息成功");
+                 [self getUserInfoOk:responseObject[@"Result"]];
+                 
+                 
+                 
+             }
+             else
+             {
+                 NSString *errorMessage = ((NSDictionary *)responseObject)[@"ErrorMessage"];
+                 NSLog(@"获取用户信息失败,错误:%@",errorMessage);
+             }
+        
+    }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error){
+             // 请求失败
+             NSString *errorMessage = [error localizedDescription];
+             NSLog(@"登录失败，错误：%@", errorMessage);
+            // [self getUserInfoFailedWithError:errorMessage];
+        
+    }];
+}
+
+-(void)getUserInfoOk:(NSDictionary *)infoDic
+{
+    NSLog(@"%@",infoDic);
+}
+
 
 -(BOOL)logout
 {
@@ -114,7 +165,7 @@
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"hasLogin"];
     }
     
-    //[[NSNotificationCenter defaultCenter] postNotificationName:@"logoutOk" object:nil userInfo:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"logoutOk" object:nil userInfo:nil];
     
     return YES;
 }

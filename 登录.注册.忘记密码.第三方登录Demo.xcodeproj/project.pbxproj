@@ -76,6 +76,12 @@
 		C772B6C01B249A2A00CA576B /* libSocialWhatsapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C772B6A51B249A2A00CA576B /* libSocialWhatsapp.a */; };
 		C772B6C11B249A2A00CA576B /* libSocialYiXin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C772B6A81B249A2A00CA576B /* libSocialYiXin.a */; };
 		C772B6C21B249A2A00CA576B /* libYixinSDK_V2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C772B6A91B249A2A00CA576B /* libYixinSDK_V2.2.a */; };
+		C77D339E1B2D19F900D20188 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D33951B2D19F900D20188 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C77D339F1B2D19F900D20188 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D33971B2D19F900D20188 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C77D33A01B2D19F900D20188 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D33991B2D19F900D20188 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C77D33A11B2D19F900D20188 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D339B1B2D19F900D20188 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C77D33A21B2D19F900D20188 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D339D1B2D19F900D20188 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C77E8DD11B2C780200CBD686 /* SqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C77E8DD01B2C780200CBD686 /* SqliteManager.m */; };
 		C788BD141B2870A20027876C /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD131B2870A20027876C /* MainTabBarViewController.m */; };
 		C788BD171B2870C10027876C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD161B2870C10027876C /* FirstViewController.m */; };
 		C788BD1A1B2870D10027876C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C788BD191B2870D10027876C /* SecondViewController.m */; };
@@ -83,6 +89,7 @@
 		C788BD1F1B28840D0027876C /* 头像.png in Resources */ = {isa = PBXBuildFile; fileRef = C788BD1E1B28840D0027876C /* 头像.png */; };
 		C7CDD5331B2BCF7900018E2C /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CDD5321B2BCF7900018E2C /* KeychainItemWrapper.m */; };
 		C7CDD53F1B2BF40300018E2C /* KeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CDD53E1B2BF40300018E2C /* KeyChainManager.m */; };
+		C7E00AA01B2D2FAD007BEF52 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E00A9F1B2D2FAD007BEF52 /* UserData.m */; };
 		C7EB9EB31B2325610043CC10 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E8D1B2325610043CC10 /* AFHTTPRequestOperation.m */; };
 		C7EB9EB41B2325610043CC10 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E8F1B2325610043CC10 /* AFHTTPRequestOperationManager.m */; };
 		C7EB9EB51B2325610043CC10 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9E911B2325610043CC10 /* AFHTTPSessionManager.m */; };
@@ -245,6 +252,18 @@
 		C772B6AA1B249A2A00CA576B /* UMSocialYiXinHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialYiXinHandler.h; sourceTree = "<group>"; };
 		C772B6AB1B249A2A00CA576B /* YXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXApi.h; sourceTree = "<group>"; };
 		C772B6AC1B249A2A00CA576B /* YXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXApiObject.h; sourceTree = "<group>"; };
+		C77D33941B2D19F900D20188 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C77D33951B2D19F900D20188 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C77D33961B2D19F900D20188 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C77D33971B2D19F900D20188 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C77D33981B2D19F900D20188 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C77D33991B2D19F900D20188 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C77D339A1B2D19F900D20188 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C77D339B1B2D19F900D20188 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C77D339C1B2D19F900D20188 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		C77D339D1B2D19F900D20188 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C77E8DCF1B2C780200CBD686 /* SqliteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteManager.h; sourceTree = "<group>"; };
+		C77E8DD01B2C780200CBD686 /* SqliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteManager.m; sourceTree = "<group>"; };
 		C788BD121B2870A20027876C /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		C788BD131B2870A20027876C /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		C788BD151B2870C10027876C /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -258,6 +277,8 @@
 		C7CDD5321B2BCF7900018E2C /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		C7CDD53D1B2BF40300018E2C /* KeyChainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainManager.h; sourceTree = "<group>"; };
 		C7CDD53E1B2BF40300018E2C /* KeyChainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainManager.m; sourceTree = "<group>"; };
+		C7E00A9E1B2D2FAD007BEF52 /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		C7E00A9F1B2D2FAD007BEF52 /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
 		C7EB9E8C1B2325610043CC10 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		C7EB9E8D1B2325610043CC10 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		C7EB9E8E1B2325610043CC10 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -354,6 +375,7 @@
 				C772B5FB1B24804000CA576B /* 68-sina-weibo.png */,
 				C7CDD5311B2BCF7900018E2C /* KeychainItemWrapper.h */,
 				C7CDD5321B2BCF7900018E2C /* KeychainItemWrapper.m */,
+				C77D33931B2D19F900D20188 /* fmdb */,
 				C772B66D1B249A2A00CA576B /* UMSocial_Sdk_Extra_Frameworks */,
 				C772B6451B2499A400CA576B /* UMSocial_Sdk_4.2.3 */,
 				C7EB9E8A1B2325610043CC10 /* AFNetworking */,
@@ -431,6 +453,10 @@
 				C753BEFF1B22AB7B00D38245 /* SystemManager.m */,
 				C7CDD53D1B2BF40300018E2C /* KeyChainManager.h */,
 				C7CDD53E1B2BF40300018E2C /* KeyChainManager.m */,
+				C77E8DCF1B2C780200CBD686 /* SqliteManager.h */,
+				C77E8DD01B2C780200CBD686 /* SqliteManager.m */,
+				C7E00A9E1B2D2FAD007BEF52 /* UserData.h */,
+				C7E00A9F1B2D2FAD007BEF52 /* UserData.m */,
 			);
 			name = "注册和登录";
 			sourceTree = "<group>";
@@ -695,6 +721,23 @@
 			path = YiXin;
 			sourceTree = "<group>";
 		};
+		C77D33931B2D19F900D20188 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				C77D33941B2D19F900D20188 /* FMDatabase.h */,
+				C77D33951B2D19F900D20188 /* FMDatabase.m */,
+				C77D33961B2D19F900D20188 /* FMDatabaseAdditions.h */,
+				C77D33971B2D19F900D20188 /* FMDatabaseAdditions.m */,
+				C77D33981B2D19F900D20188 /* FMDatabasePool.h */,
+				C77D33991B2D19F900D20188 /* FMDatabasePool.m */,
+				C77D339A1B2D19F900D20188 /* FMDatabaseQueue.h */,
+				C77D339B1B2D19F900D20188 /* FMDatabaseQueue.m */,
+				C77D339C1B2D19F900D20188 /* FMResultSet.h */,
+				C77D339D1B2D19F900D20188 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		C77E8DCE1B2C274C00CBD686 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -899,7 +942,9 @@
 				C7EB9EC11B2325610043CC10 /* UIButton+AFNetworking.m in Sources */,
 				C7EB9EB91B2325610043CC10 /* AFURLRequestSerialization.m in Sources */,
 				C7EB9EB81B2325610043CC10 /* AFURLConnectionOperation.m in Sources */,
+				C77D339E1B2D19F900D20188 /* FMDatabase.m in Sources */,
 				C753BEAD1B2292F600D38245 /* IQKeyboardManager.m in Sources */,
+				C77D33A01B2D19F900D20188 /* FMDatabasePool.m in Sources */,
 				C788BD1A1B2870D10027876C /* SecondViewController.m in Sources */,
 				C7EB9EC31B2325610043CC10 /* UIProgressView+AFNetworking.m in Sources */,
 				C753BEB51B2292F600D38245 /* UIWindow+Hierarchy.m in Sources */,
@@ -909,6 +954,7 @@
 				C788BD1D1B2870E60027876C /* ThirdViewController.m in Sources */,
 				C753BEB81B2293D500D38245 /* ForgetPasswordViewController.m in Sources */,
 				C753BEB41B2292F600D38245 /* UIView+IQKeyboardToolbar.m in Sources */,
+				C77E8DD11B2C780200CBD686 /* SqliteManager.m in Sources */,
 				C7EB9EB71B2325610043CC10 /* AFSecurityPolicy.m in Sources */,
 				C7EB9EB31B2325610043CC10 /* AFHTTPRequestOperation.m in Sources */,
 				C7EB9EBE1B2325610043CC10 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -928,9 +974,13 @@
 				C753BEB11B2292F600D38245 /* IQToolbar.m in Sources */,
 				C7EB9EB41B2325610043CC10 /* AFHTTPRequestOperationManager.m in Sources */,
 				C7EB9EC21B2325610043CC10 /* UIImageView+AFNetworking.m in Sources */,
+				C77D33A11B2D19F900D20188 /* FMDatabaseQueue.m in Sources */,
 				C753BE691B22854700D38245 /* ViewController.m in Sources */,
 				C753BEAE1B2292F600D38245 /* IQSegmentedNextPrevious.m in Sources */,
+				C7E00AA01B2D2FAD007BEF52 /* UserData.m in Sources */,
+				C77D339F1B2D19F900D20188 /* FMDatabaseAdditions.m in Sources */,
 				C753BE661B22854700D38245 /* AppDelegate.m in Sources */,
+				C77D33A21B2D19F900D20188 /* FMResultSet.m in Sources */,
 				C7EB9EB61B2325610043CC10 /* AFNetworkReachabilityManager.m in Sources */,
 				C7EB9EC51B2325610043CC10 /* UIWebView+AFNetworking.m in Sources */,
 				C7EB9EBA1B2325610043CC10 /* AFURLResponseSerialization.m in Sources */,
