@@ -12,6 +12,7 @@
 @interface KeyChainManager()
 
 @property (nonatomic,strong) KeychainItemWrapper * passwordWrapper;
+@property (nonatomic,strong) KeychainItemWrapper *accessTokenWrapper;
 
 @end
 
@@ -34,6 +35,8 @@
     if (self !=nil) {
         /** 初始化一个保存用户帐号的KeychainItemWrapper对象   必须的*/
         self.passwordWrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"pass" accessGroup:nil serviceName:@"sev"];
+        //不要忘记alloc产生对象
+        self.accessTokenWrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"PDAccessToken" accessGroup:nil serviceName:@"com.fugao.pocketdoctor"];
     }
     return self;
 }
@@ -74,6 +77,22 @@
 -(void)resetPassword
 {
     [self.passwordWrapper resetKeychainItem];
+}
+
+-(void)saveAccessToken:(NSString *)accessToken
+{
+    [self.accessTokenWrapper setObject:accessToken forKey:(__bridge id)(kSecAttrAccount)];
+    [self.accessTokenWrapper setObject:accessToken forKey:(__bridge id)(kSecValueData)];
+}
+
+-(NSString *)loadAccessToken
+{
+    return [self.accessTokenWrapper objectForKey:(__bridge id)(kSecValueData)];
+}
+
+-(void)resetAccessToken
+{
+    [self.accessTokenWrapper resetKeychainItem];
 }
 
 @end

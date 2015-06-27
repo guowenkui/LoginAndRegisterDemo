@@ -9,6 +9,7 @@
 #import "SystemManager.h"
 #import "AFHTTPRequestOperationManager.h"
 #import "SqliteManager.h"
+#import "KeyChainManager.h"
 @interface SystemManager()
 
 @property (nonatomic,assign) LoginState loginState;//登录状态
@@ -80,6 +81,9 @@
                   NSLog(@"登陆成功");
                   NSLog(@"responseObject==%@",responseObject);
                   
+                  //保存令牌
+                  [[KeyChainManager sharedInstance] saveAccessToken:responseObject[@"access_token"]];
+                  
                   self.loginState = LoginStateOnline;
                   
                   //记住登录状态
@@ -112,17 +116,24 @@
 //登录成功后获取用户信息
 -(void)requestForUserInfo
 {
-    //模拟获取信息后放入数据库
-    UserData*data = [[UserData alloc] init];
-    
-    data.nicknime = @"郭文魁";
-    
-    [[SqliteManager shareManager] addUser:data];
+//    //模拟获取信息后放入数据库
+//    UserData*data = [[UserData alloc] init];
+//    
+//    data.nicknime = @"郭文魁";
+//    
+//    [[SqliteManager shareManager] addUser:data];
     
     
     
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    //添加请求头 否者解析不出来数据
+    NSString *access_token = [[KeyChainManager sharedInstance] loadAccessToken];
+    NSString *authHeader = [NSString stringWithFormat:@"Bearer %@", access_token];
+    
+    [manager.requestSerializer setValue:authHeader forHTTPHeaderField:@"Authorization"];
+
     
     [manager GET:@"https://public.fdekyy.com.cn/api/app/Member/GetUserInfo"
       parameters:nil
@@ -146,7 +157,7 @@
          failure:^(AFHTTPRequestOperation *operation, NSError *error){
              // 请求失败
              NSString *errorMessage = [error localizedDescription];
-             NSLog(@"登录失败，错误：%@", errorMessage);
+             NSLog(@"获取用户信息哦，错误：%@", errorMessage);
             // [self getUserInfoFailedWithError:errorMessage];
         
     }];
@@ -155,6 +166,12 @@
 -(void)getUserInfoOk:(NSDictionary *)infoDic
 {
     NSLog(@"%@",infoDic);
+    
+    UserData *data = [[UserData alloc] init];
+    
+    data.nicknime =infoDic[@"NickName"];
+    [[SqliteManager shareManager] addUser:data];
+    
 }
 
 

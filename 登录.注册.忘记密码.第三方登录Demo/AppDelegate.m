@@ -13,6 +13,7 @@
 #import "MainTabBarViewController.h"
 #import "SystemManager.h"
 #import "SqliteManager.h"
+#import "UMSocialQQHandler.h"
 @interface AppDelegate ()
 
 @end
@@ -30,6 +31,8 @@
     
     //微信
     [UMSocialWechatHandler setWXAppId:@"wx4a0959529ef970e3" appSecret:@"0c1b9f673fffc4adfe2519a8a7daabdc" url:@"http://www.baidu.com"];
+    //QQ
+    [UMSocialQQHandler setQQWithAppId:@"100424468" appKey:@"c7394704798a158208a74ab60104f0ba" url:@"http://www.umeng.com/social"];
     
 //    UIStoryboard *str = [UIStoryboard storyboardWithName:@"LoginAndRegister" bundle:nil];
 //    UINavigationController *nav = [str instantiateInitialViewController];

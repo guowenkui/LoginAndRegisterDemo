@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>cc.logindemo.kui</string>
+	<string>com.fx.healthmanager</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -28,6 +28,14 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>wx4a0959529ef970e3</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tencent100424468</string>
 			</array>
 		</dict>
 	</array>

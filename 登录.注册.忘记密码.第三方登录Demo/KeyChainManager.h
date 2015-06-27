@@ -20,5 +20,9 @@
 -(NSString *)loadPassword;
 -(void)resetPassword;
 
+-(void)saveAccessToken:(NSString *)accessToken;
+-(NSString *)loadAccessToken;
+-(void)resetAccessToken;
+
 
 @end
